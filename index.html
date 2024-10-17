@@ -19,7 +19,7 @@
             align-items: center;
             height: 100vh;
             padding: 20px;
-            overflow: hidden; /* Zapobiega przewijaniu */
+            overflow: hidden; 
         }
 
         .container {
@@ -28,8 +28,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 1000px; /* Zwiększona szerokość */
-            height: 90vh; /* Wysokość na 90% ekranu */
+            max-width: 1000px;
+            height: 90vh; 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -114,12 +114,12 @@
 <body>
 
     <div class="container">
-        <!-- Nazwa formularza -->
+        <!-- Название -->
         <h1>Formularz zgłoszeniowy</h1>
         <h2>Wstąp do klubu gitarowego</h2>
 
         <form>
-            <!-- Dane podstawowe -->
+            <!-- Данные -->
             <div>
                 <label for="name">Imię i nazwisko:</label>
                 <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required>
@@ -134,7 +134,7 @@
                 <input type="tel" id="phone" name="phone" placeholder="Wpisz swój numer telefonu" required>
             </div>
 
-            <!-- Płeć -->
+            <!-- Род -->
             <div>
                 <label>Płeć:</label>
                 <div class="radio-group">
@@ -150,7 +150,7 @@
                 </div>
             </div>
 
-            <!-- Preferencje i motywacje -->
+            <!-- Мотивация -->
             <div>
                 <label for="experience">Doświadczenie z gitarą:</label>
                 <select id="experience" name="experience" required>
@@ -176,13 +176,13 @@
                 <textarea id="motivation" name="motivation" placeholder="Napisz kilka zdań o swojej motywacji..." required></textarea>
             </div>
 
-            <!-- Zgoda na przetwarzanie danych -->
+            <!-- Соглашение -->
             <div class="consent">
                 <input type="checkbox" name="consent" required>
                 <label>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji zgłoszenia do klubu gitarowego.</label>
             </div>
 
-            <!-- Przycisk wysyłania -->
+            <!-- Отправить -->
             <button type="submit">Wyślij zgłoszenie</button>
         </form>
     </div>
